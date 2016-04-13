@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hpk-sJ-Orv">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--作者頁-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="poerty" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,30 +22,45 @@
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="李白"/>
+                                <connections>
+                                    <segue destination="IXE-21-wuK" kind="show" id="pbU-O5-goG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXR-42-BXv">
                                 <rect key="frame" x="155" y="253" width="105" height="30"/>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="杜甫"/>
+                                <connections>
+                                    <segue destination="IXE-21-wuK" kind="show" id="dMg-ko-n1b"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFd-dK-bem">
                                 <rect key="frame" x="155" y="304" width="105" height="30"/>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="王維"/>
+                                <connections>
+                                    <segue destination="IXE-21-wuK" kind="show" id="29F-lf-FEI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVa-yb-HlD">
                                 <rect key="frame" x="155" y="353" width="105" height="30"/>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="王昌齡"/>
+                                <connections>
+                                    <segue destination="IXE-21-wuK" kind="show" id="bYe-cn-EqQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIh-jQ-M7Z">
                                 <rect key="frame" x="155" y="402" width="105" height="30"/>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="王翰"/>
+                                <connections>
+                                    <segue destination="IXE-21-wuK" kind="show" id="POm-h6-jNu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="作者頁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDt-sf-ZNV">
                                 <rect key="frame" x="155" y="137" width="105" height="24"/>
@@ -56,13 +71,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="作者頁" id="VhJ-Ru-GCX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="326"/>
+            <point key="canvasLocation" x="765" y="342"/>
         </scene>
-        <!--View Controller-->
+        <!--作品頁-->
         <scene sceneID="tA4-oy-aj9">
             <objects>
                 <viewController id="IXE-21-wuK" customClass="ViewController" customModule="poerty" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +86,7 @@
                         <viewControllerLayoutGuide type="top" id="r89-kK-6Bv"/>
                         <viewControllerLayoutGuide type="bottom" id="M5O-T0-sXK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TkS-Jo-T9U">
+                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="TkS-Jo-T9U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -79,30 +95,45 @@
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="從軍行"/>
+                                <connections>
+                                    <segue destination="LkN-0D-zCp" kind="show" id="Bt9-VX-HEu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-aJ-bkO">
                                 <rect key="frame" x="155" y="253" width="105" height="30"/>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="八陣圖"/>
+                                <connections>
+                                    <segue destination="LkN-0D-zCp" kind="show" id="fbp-rv-MGI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL3-Yr-0N4">
                                 <rect key="frame" x="155" y="304" width="105" height="30"/>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="觀獵"/>
+                                <connections>
+                                    <segue destination="LkN-0D-zCp" kind="show" id="wVd-mz-QNs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LF-vF-efQ">
                                 <rect key="frame" x="155" y="353" width="105" height="30"/>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="閨怨"/>
+                                <connections>
+                                    <segue destination="LkN-0D-zCp" kind="show" id="GUk-fe-CyS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mge-fo-cDr">
                                 <rect key="frame" x="155" y="402" width="105" height="30"/>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="涼州詞"/>
+                                <connections>
+                                    <segue destination="LkN-0D-zCp" kind="show" id="MPh-EQ-R9h"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="作品頁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJI-Vm-6zk">
                                 <rect key="frame" x="155" y="137" width="105" height="24"/>
@@ -111,15 +142,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="作品頁" id="qFj-oz-sAP"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRi-FM-tCE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="494" y="326"/>
+            <point key="canvasLocation" x="1302" y="350"/>
         </scene>
-        <!--View Controller-->
+        <!--詩-->
         <scene sceneID="UCZ-3e-iSm">
             <objects>
                 <viewController id="LkN-0D-zCp" sceneMemberID="viewController">
@@ -127,18 +159,10 @@
                         <viewControllerLayoutGuide type="top" id="1Yi-xd-3DJ"/>
                         <viewControllerLayoutGuide type="bottom" id="jQ3-lZ-ga5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Iyl-Dy-mPr">
+                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="Iyl-Dy-mPr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eZK-0Q-Xnk">
-                                <rect key="frame" x="20" y="146" width="374" height="53"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">从军玉门道，逐虏金微山。笛奏梅花曲，刀开明月环。
-鼓声鸣海上，兵气拥云间。愿斩单于首，长驱静铁关。</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="詩" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LO-i4-WO0">
                                 <rect key="frame" x="155" y="94" width="105" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -146,7 +170,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fWb-Sm-x7F">
-                                <rect key="frame" x="20" y="215" width="374" height="53"/>
+                                <rect key="frame" x="20" y="224" width="374" height="53"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">功盖三分国，名高八阵图。
 江流石不转，遗恨失吞吴。</string>
@@ -154,25 +178,15 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cyj-SW-cb2">
-                                <rect key="frame" x="20" y="404" width="374" height="53"/>
+                                <rect key="frame" x="20" y="437" width="374" height="53"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">闺中少妇不知愁，春日凝妆上翠楼。
 忽见陌头杨柳色，悔教夫婿觅封侯。</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NoV-BS-2gq">
-                                <rect key="frame" x="20" y="493" width="374" height="83"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">葡萄美酒夜光杯 ，
-欲饮琵琶马上催。
-醉卧沙场君莫笑，
-古来征战几人回？</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ncZ-Rf-HPf">
-                                <rect key="frame" x="20" y="292" width="374" height="83"/>
+                                <rect key="frame" x="20" y="315" width="374" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">风劲角弓鸣，将军猎渭城。
 草枯鹰眼疾，雪尽马蹄轻。
@@ -181,14 +195,56 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NoV-BS-2gq">
+                                <rect key="frame" x="20" y="531" width="374" height="83"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">葡萄美酒夜光杯 ，
+欲饮琵琶马上催。
+醉卧沙场君莫笑，
+古来征战几人回？</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e8Q-Jw-913">
+                                <rect key="frame" x="20" y="143" width="374" height="66.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">青海長雲暗雪山， 孤城遙望玉門關。
+
+黃沙百戰穿金甲， 不破樓蘭終不還。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="詩" id="OBr-TJ-lwX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsa-Yx-oaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="949" y="326"/>
+            <point key="canvasLocation" x="1793" y="342"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="adq-Rm-9DJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hpk-sJ-Orv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P6K-xD-ZBi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IlZ-f0-JWa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXe-iH-Tjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="326"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pbU-O5-goG"/>
+        <segue reference="wVd-mz-QNs"/>
+    </inferredMetricsTieBreakers>
 </document>
